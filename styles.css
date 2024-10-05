@@ -1,51 +1,85 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Minimalista</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Página Minimalista</h1>
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        <!-- Primera imagen a la izquierda -->
-        <div class="content-row left">
-            <img src="imagen1.jpg" alt="Imagen 1">
-            <div class="text-box">
-                <p>Texto explicativo sobre la primera imagen. Este cuadro puede contener cualquier información relacionada con la imagen.</p>
-            </div>
-        </div>
+body {
+    background-color: #000; /* Fondo negro */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
 
-        <!-- Segunda imagen a la izquierda también -->
-        <div class="content-row left">
-            <img src="imagen2.jpg" alt="Imagen 2">
-            <div class="text-box">
-                <p>Texto explicativo sobre la segunda imagen. Aquí se puede añadir información importante o detalles descriptivos.</p>
-            </div>
-        </div>
+.container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #1a1a1a;
+    overflow-y: auto; /* Permite desplazamiento si el contenido es extenso */
+    height: 90vh;
+}
 
-        <!-- Tercera imagen a la izquierda -->
-        <div class="content-row left">
-            <img src="imagen3.jpg" alt="Imagen 3">
-            <div class="text-box">
-                <p>Texto explicativo sobre la tercera imagen. Más detalles o información complementaria sobre esta imagen.</p>
-            </div>
-        </div>
+/* Estilo de las filas de contenido */
+.content-row {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+}
 
-        <!-- GIF -->
-        <div class="gif-container">
-            <img src="animacion.gif" alt="GIF">
-        </div>
+.content-row.left img {
+    order: 1;
+    margin-right: 20px;
+}
 
-        <!-- Video -->
-        <div class="video-container">
-            <video controls>
-                <source src="video.mp4" type="video/mp4">
-                Tu navegador no soporta videos HTML5.
-            </video>
-        </div>
-    </div>
-</body>
-</html>
+/* Cuadros de texto */
+.text-box {
+    flex: 1;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.text-box p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Estilo de las imágenes */
+.content-row img {
+    width: 30%;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.content-row img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo del GIF */
+.gif-container img {
+    width: 50%;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+/* Estilo del video */
+.video-container video {
+    width: 80%;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/* Encabezado */
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
