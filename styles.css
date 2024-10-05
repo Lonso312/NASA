@@ -1,3 +1,4 @@
+/* Estilo general */
 * {
     margin: 0;
     padding: 0;
@@ -21,17 +22,50 @@ body {
     padding: 20px;
     border-radius: 20px;
     background-color: #1a1a1a;
+    overflow-y: auto; /* Permite desplazamiento si el contenido es extenso */
+    height: 90vh;
+}
+
+/* Estilo de las filas de contenido */
+.content-row {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.content-row.left img {
+    order: 1;
+    margin-right: 20px;
+}
+
+.content-row.right img {
+    order: 2;
+    margin-left: 20px;
+}
+
+/* Cuadros de texto */
+.text-box {
+    flex: 1;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.text-box p {
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
 /* Estilo de las imágenes */
-.image-container img {
+.content-row img {
     width: 30%;
-    margin: 10px;
     border-radius: 15px;
     transition: transform 0.3s ease;
 }
 
-.image-container img:hover {
+.content-row img:hover {
     transform: scale(1.05);
 }
 
