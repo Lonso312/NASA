@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000; /* Fondo negro */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #1a1a1a;
+}
+
+/* Estilo de las imágenes */
+.image-container img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo del GIF */
+.gif-container img {
+    width: 50%;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+/* Estilo del video */
+.video-container video {
+    width: 80%;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/* Encabezado */
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
