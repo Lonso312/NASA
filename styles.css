@@ -16,13 +16,11 @@ body {
 }
 
 .container {
+    margin: auto;
     width: 80%;
-    max-width: 1200px;
     padding: 20px;
     border-radius: 20px;
     background-color: #1a1a1a;
-    align-items: center;
-
 }
 
 /* Estilo de las filas de contenido */
