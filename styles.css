@@ -22,7 +22,6 @@ body {
     padding: 20px;
     border-radius: 20px;
     background-color: #1a1a1a;
-    overflow-y: auto; /* Permite desplazamiento si el contenido es extenso */
     height: 90vh;
 }
 
