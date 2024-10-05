@@ -1,4 +1,9 @@
 /* Estilo general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: #000; /* Fondo negro */
@@ -16,7 +21,8 @@ body {
     padding: 20px;
     border-radius: 20px;
     background-color: #1a1a1a;
-    height: 90vh;
+    align-items: center;
+
 }
 
 /* Estilo de las filas de contenido */
