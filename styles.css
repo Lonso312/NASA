@@ -29,10 +29,8 @@ body {
 .content-row {
     display: flex;
     align-items: center;
-    margin: 20px 20px;
+    margin: 20px 0;
     padding: 10px;
-    max-width: 20%;
-    max-height: 20%;
 }
 
 .content-row.left img {
@@ -40,7 +38,6 @@ body {
     margin-right: 20px;
     max-width: 20%;
     max-height: 20%;
-    margin-left: 20px;
 }
 
 /* Cuadros de texto */
@@ -62,10 +59,11 @@ body {
     width: 30%;
     border-radius: 15px;
     transition: transform 0.3s ease;
+      margin: 20px;
 }
 
 .content-row img:hover {
-    transform: scale(2.05);
+    transform: scale(1.05);
 }
 
 /* Estilo del GIF */
