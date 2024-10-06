@@ -31,13 +31,11 @@ body {
     align-items: center;
     margin: 20px 0;
     padding: 10px;
-
 }
 
 .content-row.left img {
     order: 1;
     margin-right: 20px;
-  
 }
 
 /* Cuadros de texto */
@@ -59,13 +57,19 @@ body {
     width: 30%;
     border-radius: 15px;
     transition: transform 0.3s ease;
+      margin: 20px;
 }
 
 .content-row img:hover {
     transform: scale(1.05);
 }
 
-
+/* Estilo del GIF */
+.gif-container img {
+    width: 50%;
+    margin: 20px 0;
+    border-radius: 15px;
+}
 
 /* Estilo del video */
 .video-container video {
@@ -78,5 +82,4 @@ body {
 h1 {
     margin-bottom: 30px;
     font-size: 2.5em;
-    font-size: medium;
 }
