@@ -55,10 +55,10 @@ body {
 
 /* Estilo de las imágenes */
 .content-row img {
-    width: 30%;
+    width: 20%;
     border-radius: 15px;
     transition: transform 0.3s ease;
-      margin: 20px;
+    margin: 20px;
 }
 
 .content-row img:hover {
