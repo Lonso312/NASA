@@ -65,12 +65,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Estilo del GIF */
-.gif-container img {
-    width: 50%;
-    margin: 20px 0;
-    border-radius: 15px;
-}
+
 
 /* Estilo del video */
 .video-container video {
