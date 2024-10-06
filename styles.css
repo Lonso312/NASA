@@ -57,7 +57,6 @@ body {
     width: 30%;
     border-radius: 15px;
     transition: transform 0.3s ease;
-      margin: 20px;
 }
 
 .content-row img:hover {
